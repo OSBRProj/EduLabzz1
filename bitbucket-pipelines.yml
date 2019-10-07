@@ -1,0 +1,83 @@
+# # This is a sample build configuration for PHP.
+# # Check our guides at https://confluence.atlassian.com/x/e8YWN for more examples.
+# # Only use spaces to indent your .yml configuration.
+# # -----
+# # You can specify a custom docker image from Docker Hub as your build environment.
+# image: php:7.1.29
+
+# pipelines:
+#   default:
+#     - step:
+#         caches:
+#           - composer
+#         script:
+#           - apt-get update && apt-get install -y unzip
+#           - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+#           - composer install
+#           - vendor/bin/phpunit
+
+#           - pipe: atlassian/ssh-run:0.2.2
+#             variables:
+#               SSH_USER: 'ec2-user'
+#               SERVER: 'sftp.sandbox.edulabzz.com.br'
+#               SSH_KEY: '5]GbfD1Tx83aW)'
+#               PORT: 2222
+#               MODE: 'script'
+#               COMMAND: 'git pull'
+
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+# pipelines:
+#   default:
+#     - step:
+#         name: Deployment now
+#         deployment: staging
+#         script:
+#           - echo "Deploying to environment"
+#           - ssh sandboxe@sftp.sandbox.edulabzz.com.br -p 2222 "cd /home/sandboxe/laravel/jpiaget-web; git pull auth-origin master"
+
+# image: atlassian/default-image:2
+# pipelines:
+#   default:
+#     - step:
+#         script:
+#           - echo "Everything is awesome!"
+#     - step:
+#         name: Deploy to production
+#         deployment: staging
+#         trigger: manual
+#         script:
+#           - echo "Deployment"
+#           - pipe: atlassian/ssh-run:0.2.2
+#             variables:
+#               SSH_USER: 'ec2-user'
+#               SERVER: 'sftp.sandbox.edulabzz.com.br'
+#               SSH_KEY: '5]GbfD1Tx83aW)'
+#               PORT: 2222
+#               MODE: 'script'
+#               COMMAND: '"cd /home/sandboxe/laravel/jpiaget-web"; "git pull auth-origin master"'
+
+image: atlassian/default-image:2
+pipelines:
+  default:
+    - step:
+        script:
+          - echo "Everything is awesome!"
+    - step:
+        name: Deploy to production
+        deployment: staging
+        trigger: manual
+        script:
+          - echo "Deployment"
+          - ssh sandboxe@sftp.sandbox.edulabzz.com.br -p 2222 "cd /home/sandboxe/laravel/jpiaget-web; git pull auth-origin master"
+            variables:
+              SSH_USER: 'ec2-user'
+              SERVER: 'sftp.sandbox.edulabzz.com.br'
+              SSH_KEY: '5]GbfD1Tx83aW)'
+              PORT: 2222
+
+
+

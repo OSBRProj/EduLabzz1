@@ -1,0 +1,124 @@
+.indexRoteiros .titulo-roteiro {
+    display:block;
+    margin-bottom:6px;
+}
+
+.indexRoteiros .numero-itens {
+    font-size:12px;
+    color:#c1c1c1;
+}
+
+.indexRoteiros .txtTituloRoteiro {
+    border: none;
+    font-size: 30px;
+    color: #313247;    
+}
+
+.indexRoteiros .col-topicos {
+    max-height: 185px;
+    overflow-x: auto;
+}
+
+.indexRoteiros #divModalNovoRoteiro .col-topicos {
+    padding-left:15px;
+    padding-right:15px;
+    margin-right:0px;    
+}
+
+.indexRoteiros .col-topicos .container-input-topico input[type=text] { margin-bottom:6px; }
+.indexRoteiros .col-topicos .container-input-topico input[type=checkbox] { margin-top:12px; }
+
+.indexRoteiros .input-topico {
+    float:left;
+    width:85%;
+}
+.indexRoteiros .bt-excluir-topico {
+    float:right;
+    width:64px;
+}
+
+.indexRoteiros .row-view-topico h3 { color:#4B4F5E; }
+.indexRoteiros .row-view-topico h5 { color:#2C3640; }
+
+.indexRoteiros .row-view-topico h5 {
+    padding-left: 6px;
+    padding-top: 6px;            
+}
+
+.indexRoteiros .box-percent {
+    display:block;
+    margin-top:16px;
+}
+.indexRoteiros .box-percent .lb-percent {
+    color:#1B2065;
+    font-size:16px;
+    font-weight:600;
+}
+.indexRoteiros .box-percent-bg {
+    position:relative;
+    width:100%;
+    height:10px;
+    background:#c1c1c1;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;    
+}
+.indexRoteiros .box-percent-bg .fill-percent-bg {
+    width:0%;
+    height:100%;
+    background:#1B2065;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;    
+
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s;            
+}
+
+.indexRoteiros .col-topicos .container-input {
+    width:100%;
+    display:inline-block;
+}
+
+.indexRoteiros #formNovoRoteiro .checkbox-topico, 
+.indexRoteiros #formEditRoteiro .checkbox-topico { display:none; }
+
+.indexRoteiros #formViewRoteiro .col-topicos .container-input-topico input[type=checkbox] { margin-top:14px; }
+
+.indexRoteiros #formViewRoteiro .col-topicos .container-input {
+    width: 100%;
+    display: inline-block;
+    box-shadow: 0px 2px 4px 0px #65656559;
+    margin-bottom: 12px;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    padding-left:30px;
+    padding-right:30px;
+}
+/*.indexRoteiros #formViewRoteiro .col-topicos { padding-left:0; }        */
+.indexRoteiros #formViewRoteiro .row-view-topico h5 {
+    padding-left: 30px;
+    padding-top: 6px;
+    margin-bottom: 0px;
+    padding-bottom: 6px;
+}
+.indexRoteiros #formViewRoteiro .col-topicos .container-input-topico input[type=checkbox] {
+    margin-top: 14px;
+    margin-left: 8px;
+}
+
+.indexRoteiros .modal-dialog-roteiros.modal-xl { max-width: 768px; }
+
+.indexRoteiros .bt-adicionar-topico {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;            
+}
+
+.indexRoteiros .bt-adicionar-topico { background-color:#1B2065 !important; }
+.indexRoteiros .bt-adicionar-topico:hover { background-color:rgb(21, 25, 78) !important; }
+
+.indexRoteiros .card-roteiro { padding:15px 30px !important; }

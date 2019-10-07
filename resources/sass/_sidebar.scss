@@ -1,0 +1,222 @@
+.sidebar {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    padding: 10px 0;
+    height: 100vh;
+    z-index: 16;
+    transition: all 0.25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    width: 62px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0px 4px 8px 1px #c1c1c1;
+}
+
+.sidebar .container-aplicacao {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar ul.side-group {
+    overflow-y: auto;
+}
+
+main.darkmode .sidebar,
+main.darkmode .side-menu {
+    background-color: #207adc !important;
+}
+
+main:not(.darkmode) .sidebar,
+main:not(.darkmode) .side-menu {
+    background-color: #ffffff !important;
+}
+
+/* SCROLL DO SIDEBAR */
+.scroll ul.side-group::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.sidebar ul.side-group::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgb(162, 162, 162);
+    background-color: #F5F5F5;
+}
+
+.sidebar ul.side-group::-webkit-scrollbar {
+    width: 8px;
+    background-color: #ffffff;
+}
+
+.sidebar ul.side-group::-webkit-scrollbar-thumb {
+    border-radius: 32px;
+    background-color: #c5c5c5;
+}
+
+.doc-sidebar {
+    padding: 10px;
+    background-color: #f5f6f5;
+    overflow: hidden;
+}
+
+.doc-sidebar>.side-group-doc {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.doc-sidebar>.side-group-doc>h6 {
+    color: #a0a5a8;
+}
+
+.doc-sidebar>.side-group-doc>a>.side-group-item-doc {
+    color: #a0a5a8;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.sidebar #formInserirCodigoAula input::placeholder {
+    color: white;
+}
+
+.sidebar.show {
+    width: 232px !important;
+}
+
+.sidebar.gestao-sidebar.show {
+    margin-left: 0px !important;
+}
+
+.sidebar.gestao-sidebar:not(.show) {
+    transform: translateX(-100%);
+}
+
+.sidebar:not(.show) .side-group-item div span {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar:not(.show) i:not(.side-item-icon),
+.sidebar:not(.show) span span,
+.sidebar:not(.show) ul.side-sub-group,
+.sidebar:not(.show) .btn-classic span span,
+.sidebar:not(.show) .hide-closed {
+    display: none !important;
+}
+
+.sidebar.show .hide-opened {
+    display: none !important;
+}
+
+.sidebar.show #divCodigoAula {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.sidebar:not(.show) #divCodigoAula {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.sidebar:not(.show)+main {
+    padding-left: 62px;
+}
+
+.sidebar.gestao-sidebar:not(.show)+main {
+    padding-left: 0px;
+}
+
+.sidebar+main+footer {
+    padding-left: 62px;
+}
+
+.sidebar.show+main {
+    padding-left: 232px;
+}
+
+.sidebar .side-group {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar .side-group>a:hover,
+.sidebar .side-sub-group>a:hover,
+.sidebar .side-group-item>a {
+    text-decoration: none;
+}
+
+.sidebar .side-group-item>a {
+    color: #ffffff;
+}
+
+.sidebar .side-group-item {
+    color: #0D1033;
+    font-size: 14px;
+    padding: 14px 8px;
+    cursor: pointer;
+    border: none !important;
+}
+
+.sidebar .side-group-item.active {
+    /*padding: 8px;*/
+}
+.sidebar a:hover>.side-group-item:not(.active),
+.sidebar .side-group-item:hover:not(.active) {
+    /*border: 1px solid white;*/
+    /*transition: 0.1s all ease-in-out;*/
+    /*margin: 5px;*/
+    /*border-radius: 20px;*/
+    /*padding: 15px;*/
+    color: #207adc;
+}
+
+.sidebar .side-item-icon {
+    font-size: 16px;
+    width: 32px;
+    text-align: center;
+}
+
+.sidebar .side-sub-group {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0px;
+    background-color: #f6f6f6;
+}
+
+.sidebar .side-sub-group-item {
+    font-weight: normal;
+    color: #333;
+    font-size: 14px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.sidebar .active {
+    color: #fff;
+    background: #207adc;
+}
+
+@media (min-width: 1200px) {
+    .sidebar {
+        height: calc(100vh - 64px);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 75px;
+    }
+    .avatar-img{
+        margin-bottom: 15px!important;
+    }
+    .sidebar+main {
+        width: 100%;
+        padding: 0px 0px;
+        padding-left: 82px !important;
+    }
+    .sidebar.gestao-sidebar+main {
+        padding-left: 0px !important;
+    }
+}

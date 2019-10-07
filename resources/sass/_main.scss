@@ -1,0 +1,107 @@
+main{
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+}
+@media (min-width: 1140px) {
+    .container{
+        max-width: 1920px;
+    }
+}
+h2{
+    font-size: 1.75rem;
+}
+.title{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-bottom: 12px;
+    h2{
+        font-weight: 600;
+    }
+}
+.fs-1{
+    font-size: 1.25rem!important;
+}
+.border-color{
+    border-color: #ced4da!important;
+}
+
+// Carousel Catálogo Destaques.
+.carousel-indicators {
+    bottom: -40px!important;
+    li{
+    background: #505050!important;
+    border: none!important;
+    }
+}
+.carousel-indicators>.active{
+    background: #207ADC!important;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    font-size: 1.5em!important;
+}
+.carousel-control-next i{
+    padding-right: 10px;
+}
+.carousel-control-prev i{
+    padding-left: 10px;
+}
+// END Carousel Catálogo Destaques.
+
+
+//Meus cursos
+.ball-links-menu{
+    width: 40px!important;
+    height: 40px!important;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    // margin: auto;
+}
+
+.ball-links-menu-modal{
+    width: 28px !important;
+    height: 28px !important;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    float: left;
+    // margin: auto;
+}
+
+.btn-ball-links-menu{
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    flex-direction: column;
+}
+//END Meus cursos
+
+// input:invalid {
+//     background-color: rgba(255,0,0,0.1) !important;
+// }
+
+.is-invalid {
+    border: 1px solid red !important;
+}
+
+.campo-obrigatorio
+{
+    color: red !important;
+    font-size: 12px;
+    font-weight: normal !important;
+    text-align: -webkit-left;
+    margin-top: 5px;
+}
+
+.audiosAddInline {
+    max-height: 52vh;
+    overflow-y: auto;
+}
+
+
+.note-editor.note-frame.card {
+    border: 0px;
+    border-radius: 0px;
+}

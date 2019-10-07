@@ -1,0 +1,175 @@
+.mainViewMuralTurma {
+
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css');
+
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css');
+
+    .input-group input.text-secondary::placeholder {
+        color: #989EB4;
+    }
+
+    .form-group label {
+        color: #c3c5d2;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+
+    .form-control {
+        color: #525870;
+        font-weight: bold;
+        font-size: 16px;
+        border: 0px;
+        border-radius: 5px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    .form-control::placeholder {
+        color: #B7B7B7;
+    }
+
+    .custom-select option:first-child {
+        color: #B7B7B7;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: 0px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #c3c5d2;
+        cursor: pointer;
+        margin-top: 0px;
+        /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 36px;
+        cursor: pointer;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        background: #5678ef;
+        border-radius: 90px;
+        border: 8px solid #E3E5F0;
+    }
+
+    @media (min-width: 576px) {
+        .side-menu {
+            min-height: calc(100vh - 162px);
+        }
+    }
+
+    .nav-tabs {
+        border-bottom: 0;
+    }
+
+    .nav-tabs .nav-item {
+        margin-bottom: 0px;
+    }
+
+    .nav-tabs {
+
+        .nav-link {
+            border: 0px;
+            font-size: 20px;
+            border-bottom: 4px solid transparent;
+            color: #525870;
+            font-weight: bold;
+            padding-bottom: 20px;
+            background: transparent;
+        }
+
+        .nav-link.active {
+            background: transparent;
+            color: #207adc;
+            border-bottom: 4px solid #207adc;
+
+        }
+
+    }
+
+    .summernote-holder {
+        /*padding: .375rem .75rem;*/
+        padding: 0px;
+        border-radius: 0px;
+        border: 0px;
+        box-shadow: none;
+        font-size: initial;
+        text-align: initial;
+        color: initial;
+        margin-bottom: 30px;
+    }
+
+    .table thead th {
+        border: 0px;
+    }
+
+    .bg-postar {
+        background-color: transparent !important;
+    }
+
+    .bg-postagem,
+    .bg-card {
+        background-color: white !important;
+    }
+
+    main.darkmode .bg-card,
+    main.darkmode .bg-postagem,
+    main.darkmode .bg-postar {
+        background-color: #13141D !important;
+    }
+
+    main:not(.darkmode) .text-white.text-darkmode {
+        color: #13141D !important;
+    }
+
+    main:not(.darkmode) .bg-light {
+        background-color: white !important;
+    }
+
+    main.darkmode .bg-light {
+        background-color: #272A3B !important;
+    }
+
+    .aluno-liberacao {
+        padding: 10px;
+        background-color: #000313;
+        display: inline-block;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .bg-postagem img
+    {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .card-shadow
+    {
+        box-shadow: 0px 5px 4px #d5d5d5;
+    }
+
+    .label-nome
+    {
+        font-weight: bold;
+        font-size: 16px;
+        color: #525870
+    }
+    
+    .dp-icon
+    {
+        position: relative;
+    }
+
+    .dp-icon::before
+    {
+        position: absolute;
+        transform: translate(0,-50%);
+        right: 10px;
+        top: 50%;
+        font-family: "Font Awesome 5 Pro";
+        content: "\f0dd";
+    }
+}

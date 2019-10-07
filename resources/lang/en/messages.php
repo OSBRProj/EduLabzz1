@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'invalid_credentials' => 'Login ou Senha inválidos',
+    'error_generate_token' => 'Não foi possível criar o token',
+    'generic_error' => 'Erro inesperado. Contacte o administrador',
+    'request_without_token' => 'Token não fornecido',
+    'logout_success' => 'Logout efetuado com sucesso',
+    'logout_error' => 'Erro ao efetuar o logout',
+    'mensagem_cadastro' => ':nome salv:artigo com sucesso',
+    'mensagem_erro_padrao' => 'Erro ao tentar efetuar a operação. Tente novamente',
+    'mensagem_removido' => ':nome removid:artigo com sucesso',
+    'mensagem_atualizado' => ':nome atualizad:artigo com sucesso',
+    'validacao_required' => 'Preencha o campo :nome',
+    'validacao_integer' => 'Preencha o campo :nome',
+    'validacao_numeric' => 'O campo :nome deve conter apenas números',
+    'validacao_email' => 'O e-mail informado é invalido',
+    'validacao_unique' => 'Este :nome já foi cadastrado',
+    'validacao_mimes' => 'Apenas formatos :nome são validos',
+    'validacao_cpf_invalido' => 'CPF inválido',
+    'validacao_max' => 'O limite para upload de arquivo é de '.env('LIMITE_TAMANHO_UPLOAD'),
+    'validacao_gte' => 'O campo :nome deve ser maior ou igual que :value',
+    'validacao_cpf_formato_invalido' => 'O CPF deve ser no formato xxx.xxx.xxx-xx',
+    'validacao_cnpj_invalido' => 'CNPJ inválido',
+    'validacao_cnpj_formato_invalido' => 'O CNPJ deve ser no formato xx.xxx.xxx/xxxx-xx',
+    'template' => 'template',
+];

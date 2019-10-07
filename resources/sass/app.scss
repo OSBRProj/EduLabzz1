@@ -1,0 +1,26 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import 'mixins';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+// FontAwesome Pro
+// @import '../../node_modules/@fortawesome/fontawesome-pro/css/all.min.css';
+
+// Main css antigo não mexer!! @othon
+@import 'old/main.css';
+
+@import 'components';
+@import 'sidebar';
+@import 'pages/gestao/turmas/mural';
+@import 'pages/gestao/audios-interacoes/admin/_indexAudiosInteracoes';
+@import 'pages/gestao/audios-interacoes/admin/_viewAudioInteracoes';
+@import 'pages/roteiros/admin/_indexRoteiros';
+
+@import 'pages/recompensas/admin/_main';
+
+@import 'main';

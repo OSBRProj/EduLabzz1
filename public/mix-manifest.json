@@ -1,0 +1,9 @@
+{
+    "/assets/js/app.min.js": "/assets/js/app.min.js",
+    "/assets/css/app.min.css": "/assets/css/app.min.css",
+    "/assets/js/pages/gestao/turmas/mural.min.js": "/assets/js/pages/gestao/turmas/mural.min.js",
+    "/assets/js/pages/gestao/audios.min.js": "/assets/js/pages/gestao/audios.min.js",
+    "/assets/js/pages/gestao/albuns.min.js": "/assets/js/pages/gestao/albuns.min.js",
+    "/assets/js/pages/gestao/playlists.min.js": "/assets/js/pages/gestao/playlists.min.js",
+    "/assets/js/pages/gestao/roteiros.min.js": "/assets/js/pages/gestao/roteiros.min.js"
+}
